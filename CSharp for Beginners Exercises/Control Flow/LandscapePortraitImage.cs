@@ -16,16 +16,16 @@ namespace CSharp_for_Beginners_Exercises.Control_Flow
             var width = Convert.ToInt32(Console.ReadLine());
             
             Console.WriteLine("Height: ");
-            var heigth = Convert.ToInt32(Console.ReadLine());
+            var height = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(GetImageOrientation(width, heigth));
+            Console.WriteLine(GetImageOrientation(width, height));
         }
 
-        private static string GetImageOrientation(int width, int heigth)
+        private static string GetImageOrientation(int width, int height)
         {
-            if (width == heigth)
+            if (width == height)
                 return "Both values are the same. The image has a 1:1 ratio";
-            if (width > heigth)
+            if (width > height)
                 return "Landscape";
             
             return "Portrait";
